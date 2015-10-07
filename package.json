@@ -1,6 +1,6 @@
 {
   "name": "coffeerest-api-frontend-ng-admin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Put web admin interface-sauce on top of your coffeerest api",
   "main": "index.js",
   "scripts": {
