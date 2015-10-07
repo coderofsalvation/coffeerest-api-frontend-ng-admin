@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My First Admin</title>
+    <style type="text/css">
+    {{{css}}}
+    </style>
+  </head>
+  <body ng-app="myApp">
+    <div ui-view></div>
+    <script type="text/javascript">
+    {{{js}}}
+
+    {{#login.enabled}}
+    var username = window.localStorage.getItem('{{projectname}}_admin_login');
+    if (!username) {
+        window.location.href = "./login.html";
+    }
+    function logout() {
+        window.localStorage.removeItem('posters_galore_login');
+        window.location.href = "./login.html";
+    }
+    {{/login.enabled}}
+
+    var myApp = angular.module('myApp', ['ng-admin']);
+    myApp.config(['NgAdminConfigurationProvider', function(NgAdminConfigurationProvider) {
+        var nga = NgAdminConfigurationProvider;
+
+        {{{jsconfig}}}
+
+        nga.configure(admin);
+    }]);
+    </script> 
+  </body>
+</html>

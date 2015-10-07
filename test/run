@@ -1,0 +1,12 @@
+#!/bin/bash 
+SELFPATH="$(dirname "$(readlink -f "$0")" )"
+
+cd $SELFPATH
+coffee -c testdata/*.coffee
+cd $SELFPATH/api
+coffee server.coffee
+
+#timeout 4 coffee server.coffee & 
+#sleep 1s
+#cd $SELFPATH
+#coffee test.coffee 

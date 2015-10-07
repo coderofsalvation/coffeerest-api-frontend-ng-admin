@@ -1,0 +1,34 @@
+{
+  "name": "coffeerest-api-frontend-ng-admin",
+  "version": "0.1.0",
+  "description": "Put web admin interface-sauce on top of your coffeerest api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderofsalvation/coffeerest-api-frontend-ng-admin"
+  },
+  "keywords": [
+    "coffeerest",
+    "coffeescript",
+    "rest",
+    "api",
+    "admin",
+    "interface",
+    "panel",
+    "adminpanel"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "jsonschema-frontend": "",
+    "ng-admin": "^0.8.0",
+    "mustache": "^2.1.3"
+  },
+  "bugs": {
+    "url": "https://github.com/coderofsalvation/coffeerest-api-frontend-ng-admin/issues"
+  },
+  "homepage": "https://github.com/coderofsalvation/coffeerest-api-frontend-ng-admin"
+}
